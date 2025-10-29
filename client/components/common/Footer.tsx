@@ -43,8 +43,8 @@ export function Footer() {
                 Casa<span className="text-accent">Furnish</span>
               </h2>
               <p className="text-background text-opacity-80 text-sm mb-4">
-                Design Your Comfort. Discover premium furniture crafted with care
-                and attention to detail.
+                Design Your Comfort. Discover premium furniture crafted with
+                care and attention to detail.
               </p>
               <div className="flex gap-3">
                 <a

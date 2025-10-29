@@ -245,7 +245,7 @@ export default function Index() {
                 to={collection.href}
                 className={cn(
                   "group relative h-[300px] rounded-xl overflow-hidden cursor-pointer",
-                  index === 0 && "md:col-span-2"
+                  index === 0 && "md:col-span-2",
                 )}
               >
                 <img
@@ -322,7 +322,7 @@ export default function Index() {
                             "w-4 h-4",
                             i < Math.floor(product.rating)
                               ? "fill-secondary text-secondary"
-                              : "text-muted-foreground"
+                              : "text-muted-foreground",
                           )}
                         />
                       ))}
@@ -421,7 +421,7 @@ export default function Index() {
                   "w-3 h-3 rounded-full transition-all",
                   index === currentTestimonial
                     ? "bg-primary w-8"
-                    : "bg-muted-foreground bg-opacity-40 hover:bg-opacity-60"
+                    : "bg-muted-foreground bg-opacity-40 hover:bg-opacity-60",
                 )}
               />
             ))}
@@ -441,7 +441,10 @@ export default function Index() {
             to your inbox
           </p>
 
-          <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3">
+          <form
+            onSubmit={handleNewsletterSubmit}
+            className="flex flex-col sm:flex-row gap-3"
+          >
             <input
               type="email"
               placeholder="Enter your email"

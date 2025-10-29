@@ -26,7 +26,9 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground py-2 px-4 text-sm text-center">
-        <p>Free shipping on orders over $100 | Spring Collection Available Now</p>
+        <p>
+          Free shipping on orders over $100 | Spring Collection Available Now
+        </p>
       </div>
 
       {/* Main Header */}
@@ -93,7 +95,10 @@ export function Header() {
             <button className="p-2 hover:bg-secondary rounded-lg transition-colors">
               <User className="w-5 h-5 text-foreground" />
             </button>
-            <Link to="/cart" className="p-2 hover:bg-secondary rounded-lg transition-colors relative">
+            <Link
+              to="/cart"
+              className="p-2 hover:bg-secondary rounded-lg transition-colors relative"
+            >
               <ShoppingCart className="w-5 h-5 text-foreground" />
               <span className="absolute top-1 right-1 w-4 h-4 bg-accent text-xs text-accent-foreground rounded-full flex items-center justify-center font-bold">
                 0
@@ -138,7 +143,7 @@ export function Header() {
                 <svg
                   className={cn(
                     "w-4 h-4 transition-transform",
-                    isCategoryMenuOpen && "rotate-180"
+                    isCategoryMenuOpen && "rotate-180",
                   )}
                   fill="none"
                   stroke="currentColor"
